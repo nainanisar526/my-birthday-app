@@ -42,6 +42,7 @@
             position: absolute; inset: 0; display: none; padding: 20px;
             flex-direction: column; align-items: center; justify-content: center; text-align: center;
         }
+        
         section.active { display: flex; }
 
         .glass {
@@ -118,16 +119,16 @@
         </section>
 
         <!-- Gallery -->
-        <!-- <section id="sec3" class="overflow-y-auto px-6 py-20"> -->
-            <section id="sec3" class="overflow-y-auto px-4 py-10 min-h-screen"></section>
-            <!-- <h2 class="text-4xl font-serif gold-text mb-10">22 Years of You</h2> -->
-             <h2 class="text-3xl sm:text-4xl font-serif gold-text mb-8">22 Years of You</h2>
+        <section id="sec3" class="overflow-y-auto px-6 py-20">
+            <!-- <section id="sec3" class="overflow-y-auto px-4 py-10 min-h-screen"></section> -->
+            <h2 class="text-4xl font-serif gold-text mb-10">22 Years of You</h2>
+             <!-- <h2 class="text-3xl sm:text-4xl font-serif gold-text mb-8">22 Years of You</h2> -->
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl w-full">
-                <!-- <div class="glass p-3"><img src="images/image.jpeg" class="rounded-2xl w-full h-48 object-contain  mb-3"><p class="font-cursive text-xl">Handsome Munda</p></div> -->
-                 <img src="images/image.jpeg" class="rounded-2xl w-full h-auto max-h-64 object-contain mb-3">
-                <!-- <div class="glass p-3"><img src="images/image2.jpeg" class="rounded-2xl w-full h-48 object-contain  mb-3"><p class="font-cursive text-xl">Yammi Bacha</p></div> -->
-                 <img src="images/image2.jpeg" class="rounded-2xl w-full h-auto max-h-64 object-contain mb-3">
+                <div class="glass p-3"><img src="images/image.jpeg" class="rounded-2xl w-full h-48 object-contain  mb-3"><p class="font-cursive text-xl">Handsome Munda</p></div>
+                 <!-- <img src="images/image.jpeg" class="rounded-2xl w-full h-auto max-h-64 object-contain mb-3"> -->
+                <div class="glass p-3"><img src="images/image2.jpeg" class="rounded-2xl w-full h-48 object-contain  mb-3"><p class="font-cursive text-xl">Yammi Bacha</p></div>
+                 <!-- <img src="images/image2.jpeg" class="rounded-2xl w-full h-auto max-h-64 object-contain mb-3"> -->
             </div>
             <button onclick="nav(4)" class="btn-premium mt-10">Next Surprise ➔</button>
         </section>
@@ -181,8 +182,8 @@
     <script>
         // --- TIME LOGIC ---
         // Targeted specifically for Aug 10, 2026, 00:00:00 Pakistan Time (GMT+5)
-        // const targetTime = new Date("Aug 10, 2026 00:00:00 GMT+0500").getTime();
-        const targetTime = new Date("Aug 9, 2026 00:00:00 GMT+0500").getTime();
+        const targetTime = new Date("Aug 10, 2026 00:00:00 GMT+0500").getTime();
+        // const targetTime = new Date("Aug 9, 2026 00:00:00 GMT+0500").getTime();
         function updateTimer() {
             const now = new Date().getTime();
             const diff = targetTime - now;
